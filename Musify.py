@@ -100,8 +100,8 @@ btn_exp= Button(window, fg='darkblue',text="Ok" ,font=("Calibri",11,'bold'),heig
 btn_exp.grid(row=6, column=1,padx=25, pady=20)
 
 #for exiting window [without using (x)]
-btn_exp= Button(window, fg='red',text="Exit" ,font=("Calibri",11,'bold'),height= 2, width=7,cursor='dot',bg='lightgrey',command= lambda: notesaver(10))
-btn_exp.grid(row=6, column=2,padx=25, pady=20)
+btn_ext= Button(window, fg='red',text="Exit" ,font=("Calibri",11,'bold'),height= 2, width=7,cursor='dot',bg='lightgrey',command= lambda: notesaver(10))
+btn_ext.grid(row=6, column=2,padx=25, pady=20)
 
 # note duration caution
 note = Label(window, fg='#3e4042', bg="lightyellow", text="Note: Duration of each note clicked is 0.5s",font=("Calibri",9))
