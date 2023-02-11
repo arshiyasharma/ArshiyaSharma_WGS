@@ -4,14 +4,26 @@ Musify is a way for you to make your own happy tunes. [or sad infact]
 
 **The app has the basic 7 notes with the higher octave of 'Do'** and ofcourse 2 silent note options :
 
-### OVERALL LOOK - 
-![Screenshot 2023-02-11 at 7 51 49 PM](https://user-images.githubusercontent.com/71538893/218263029-6f24d092-940c-4ca3-9343-268c951d53ef.png)
+# macOS GUI -
+### OVERALL GUI - 
+ss
 
 ### IF YOU CLICK 'OK' WITHOUT PRESSING ANY NOTE -
-![Screenshot 2023-02-11 at 7 52 47 PM](https://user-images.githubusercontent.com/71538893/218263073-03273a57-0aa7-4c10-b3c6-c230d14a231b.png)
+ss
 
 ### IF YOU CLICK 'OK" AFTER YOU MAKE A TUNE - 
-![Screenshot 2023-02-11 at 7 54 47 PM](https://user-images.githubusercontent.com/71538893/218263151-0ad643dd-1a5c-4745-bb8a-53d26d33e8df.png)
+ss
+
+# Windows GUI - 
+### OVERALL GUI - 
+ss
+
+### IF YOU CLICK 'OK' WITHOUT PRESSING ANY NOTE -
+ss
+
+### IF YOU CLICK 'OK" AFTER YOU MAKE A TUNE - 
+ss
+
 
 ### HOVERING OVER NOTES gives you a star cursor! and, 
 ### HOVERING OVER OK/EXIT gives you a ball cursor! 
