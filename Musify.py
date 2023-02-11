@@ -7,7 +7,7 @@ from tkinter import *
 
 window = Tk()
 window.title("Musify")
-window.config(bg='lightyellow')
+window.config(bg='#ffeb99')
 window.geometry("570x460")
 window.resizable(False, False) # so that dimensions dont change
 
@@ -33,7 +33,7 @@ note_duration = 500
 song_list = []
 
 def notesaver(usr_inp):
-    Label(window,text="\t\t\t\t\t\t\t\t",bg="lightyellow").grid(row=7,column=0,columnspan=9) # to erase previous export message
+    Label(window,text="\t\t\t\t\t\t\t\t",bg="#ffeb99").grid(row=7,column=0,columnspan=9) # to erase previous export message
     while True:
         pos = binary_search(notes_usr, usr_inp) # using binary search to search up a note and make music
         if pos==-1:
@@ -43,12 +43,12 @@ def notesaver(usr_inp):
             try:
                 song = sum(song_list)
                 song.export("Your Music.wav", format="wav")
-                Label(window, text="Your music file has been exported!",  fg='black', bg="lightyellow").grid(row=7, column=1, columnspan=2, padx=25, pady=20)
+                Label(window, text="Your music file has been exported!",  fg='black', bg="#ffeb99").grid(row=7, column=1, columnspan=2, padx=25, pady=20)
 
                 song_list.clear()
                 break
             except AttributeError:
-                Label(window, bg="lightyellow", fg='black',text="You haven't made any music  :(").grid(row=7, column=1,columnspan=2,padx=25, pady=20)
+                Label(window, bg="#ffeb99", fg='black',text="You haven't made any music  :(").grid(row=7, column=1,columnspan=2,padx=25, pady=20)
                 break
         else:
             if usr_inp==12:
@@ -60,9 +60,9 @@ def notesaver(usr_inp):
 
 
 # main buttons and labels
-musify = Label(window, fg='darkblue', bg="lightyellow", text="Musify",font=("Calibri",30,'bold'))
+musify = Label(window, fg='darkblue', bg="#ffeb99", text="Musify",font=("Calibri",30,'bold'))
 musify.grid(row=0, column=0,columnspan=7,padx=25, pady=2)
-cap = Label(window, fg='#237a52', bg="lightyellow", text="Make your own music!",font=("Calibri",13,'bold'))
+cap = Label(window, fg='#237a52', bg="#ffeb99", text="Make your own music!",font=("Calibri",13,'bold'))
 cap.grid(row=1, column=0,columnspan=7,padx=25, pady=5)
 
 btn_do= Button(window, fg='black', bg='lightblue',text="Do" ,font=("Calibri",11,'bold'),height= 2, width=7,cursor='star',command= lambda: notesaver(1))
@@ -104,7 +104,7 @@ btn_ext= Button(window, fg='red',text="Exit" ,font=("Calibri",11,'bold'),height=
 btn_ext.grid(row=6, column=2,padx=25, pady=20)
 
 # note duration caution
-note = Label(window, fg='#3e4042', bg="lightyellow", text="Note: Duration of each note clicked is 0.5s",font=("Calibri",9))
+note = Label(window, fg='#3e4042', bg="#ffeb99", text="Note: Duration of each note clicked is 0.5s",font=("Calibri",9))
 note.grid(row=7, column=0,columnspan=7,padx=25, pady=5)
 
 window.mainloop()
