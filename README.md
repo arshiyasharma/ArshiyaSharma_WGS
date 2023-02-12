@@ -15,7 +15,7 @@ Musify is a way for you to make your own happy (or sad) tunes.
 
 ### IF YOU CLICK 'OK" AFTER YOU MAKE A TUNE - 
 ![Screenshot 2023-02-12 at 10 30 56 AM](https://user-images.githubusercontent.com/71538893/218294211-51c01ab1-8fa5-4e81-b669-bb056f5dec7c.png)
-
+>your file gets saved in the same folder as 'Your Music.WAV'
 
 ### IF YOU MESS UP AND WANT TO START YOUR TUNE ALL OVER AGAIN - 'clear' -
 ![Screenshot 2023-02-12 at 10 30 53 AM](https://user-images.githubusercontent.com/71538893/218294199-d31be8f4-e981-4c8f-8b44-91c77bec7448.png)
