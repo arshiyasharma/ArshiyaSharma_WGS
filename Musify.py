@@ -1,5 +1,6 @@
 # by Arshiya Sharma - made on windows and tested on macOS and Windows 11.
 # The dimensions of the GUI window vary from screen to screen - therefore I've selected a safer size.
+# libs used - tkinter and pydub
 
 from pydub.generators import Sine
 from pydub import AudioSegment
@@ -35,6 +36,11 @@ song_list = []
 def notesaver(usr_inp):
     Label(window,text="\t\t\t\t\t\t\t\t",bg="#ffeb99").grid(row=7,column=0,columnspan=9) # to erase previous export message
     while True:
+        if usr_inp == 101:
+            song_list.clear()
+            Label(window, text="You can start over!",  fg='black', bg="#ffeb99").grid(row=7, column=1, columnspan=2, padx=25, pady=20)
+            break
+
         pos = binary_search(notes_usr, usr_inp) # using binary search to search up a note and make music
         if pos==-1:
             window.quit()
@@ -95,16 +101,21 @@ btn_empt.grid(row=5, column=1,padx=1, pady=1)
 btn_empt= Button(window, fg='black', bg='lightblue',text='0.25s silence' ,font=("Calibri",11,'bold'),height= 2, width=10,cursor='star',command= lambda: notesaver(12))
 btn_empt.grid(row=5, column=2,padx=1, pady=1)
 
+
 #for exporting track
 btn_exp= Button(window, fg='darkblue',text="Ok" ,font=("Calibri",11,'bold'),height= 2, width=7,cursor='dot',command= lambda: notesaver(9))
-btn_exp.grid(row=6, column=1,padx=25, pady=20)
+btn_exp.grid(row=6, column=0,columnspan=2,padx=25, pady=20)
+
+#for clearing up track [incase of mistakes!!]
+btn_ext= Button(window, fg='black',text="Clear" ,font=("Calibri",11,'bold'),height= 2, width=7,cursor='dot',bg='lightgrey',command= lambda: notesaver(101))
+btn_ext.grid(row=6, column=1,columnspan=2,padx=25, pady=20)
 
 #for exiting window [without using (x)]
 btn_ext= Button(window, fg='red',text="Exit" ,font=("Calibri",11,'bold'),height= 2, width=7,cursor='dot',bg='lightgrey',command= lambda: notesaver(10))
-btn_ext.grid(row=6, column=2,padx=25, pady=20)
+btn_ext.grid(row=6, column=2,columnspan=2,padx=25, pady=20)
 
 # note duration caution
-note = Label(window, fg='#3e4042', bg="#ffeb99", text="Note: Duration of each note clicked is 0.5s",font=("Calibri",9))
+note = Label(window, fg='#3e4042', bg="#ffeb99", text="Note: Duration of each note clicked is 0.5s",font=("Calibri",12))
 note.grid(row=7, column=0,columnspan=7,padx=25, pady=5)
 
 window.mainloop()
