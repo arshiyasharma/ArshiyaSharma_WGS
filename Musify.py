@@ -1,6 +1,7 @@
 # by Arshiya Sharma - made on windows and tested on macOS and Windows 11.
 # The dimensions of the GUI window vary from screen to screen - therefore I've selected a safer size.
 # libs used - tkinter and pydub
+# binary search funtion - fully UNmodified
 
 from pydub.generators import Sine
 from pydub import AudioSegment
