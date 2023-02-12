@@ -1,6 +1,6 @@
 # **MUSIFY** - For CGS TechFest
 
-Musify is a way for you to make your own happy tunes. [or sad infact]
+Musify is a way for you to make your own happy (or sad) tunes.
 
 **The app has the basic 7 notes with the higher octave of 'Do'** and ofcourse 2 silent note options :
 
